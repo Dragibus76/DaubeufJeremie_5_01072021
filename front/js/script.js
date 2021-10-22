@@ -4,7 +4,7 @@ async function getItems() {
 		let response = await fetch("http://localhost:3000/api/products");
 		return await response.json();
 	} catch (error) {
-		console.log("Error : " + error);
+		console.log("Erreur : " + error);
 	}
 }
 
