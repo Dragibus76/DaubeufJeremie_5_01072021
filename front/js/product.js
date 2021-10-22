@@ -7,6 +7,6 @@ function idVerification() {
 		let id = searchParams.get("id");
 		return id;
 	} else {
-		console.log("Error, they'r is no id match.");
+		console.log("Erreur, il n'y a aucune correspondance.");
 	}
 }
