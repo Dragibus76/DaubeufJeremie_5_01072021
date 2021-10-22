@@ -1,6 +1,6 @@
 const products = [
   {
-    "colors": ["Blue", "White", "Black"],
+    "colors": ["Bleu", "Blanc", "Noir"],
     "_id": "107fb5b75607497b96722bda5b504926",
     "name": "Kanap Sinopé",
     "price": 1849,
@@ -84,7 +84,4 @@ exports.findById = (id) => {
     )
   );
 }
-
-
-
 
