@@ -1,4 +1,4 @@
-// Get informations from API
+// Obtenir les informations provenant de l'api
 async function getItems() {
 	try {
 		let response = await fetch("http://localhost:3000/api/products");
@@ -8,7 +8,7 @@ async function getItems() {
 	}
 }
 
-// Function of the render on Html
+// Afficher les produits de l'api
 async function renderItems() {
 	let items = await getItems();
 	let htmlRender = "";
@@ -28,5 +28,5 @@ async function renderItems() {
 	itemContainer.innerHTML += htmlRender;
 }
 
-// Calling the function
+// Appel la fonction de l'affichage de l'api
 renderItems();

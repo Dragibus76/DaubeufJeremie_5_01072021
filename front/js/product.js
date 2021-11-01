@@ -1,4 +1,4 @@
-// Check Id parameter in URL
+// Verifie l'id du produit dans l'url
 function idVerification() {
   let url = new URL(window.location.href);
   let searchParams = new URLSearchParams(url.search);
@@ -10,7 +10,7 @@ function idVerification() {
   }
 }
 
-// Get informations for the specified product
+// Obtenir la descriptios du produit spécifié
 async function getInfoById() {
   let id = idVerification();
   try {
@@ -21,7 +21,7 @@ async function getInfoById() {
   }
 }
 
-// Render on Html
+// Affiche les informations du produit
 (async function renderItem() {
   let item = await getInfoById();
   document.querySelector(
@@ -37,7 +37,7 @@ async function getInfoById() {
   });
 })();
 
-// Add LocalStorage to card
+// Sauvegarde tous nos choix dans le LocalStorage
 const addToCartBtn = document.getElementById("addToCart");
 addToCartBtn.addEventListener("click", () => {
   const itemId = idVerification();
